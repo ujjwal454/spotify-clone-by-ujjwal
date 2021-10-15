@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Varela+Round&display=swap');
+body{
+    background-color: antiquewhite;
+    font-family:  'Ubuntu', sans-serif;
+}
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    height: 65px;
+    background: #000;
+    color: white;
+    align-items: center;
+
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+.brand{
+    display: flex;
+    align-items:center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container{
+    min-height: 70vh;
+    background: #000;
+    color: #fff;
+    display: flex;
+    margin:23px auto;
+    width: 80%;
+    border-radius: 10px;
+    background-image: url(./bg.jpg);
+    background-size:cover;
+    background-position:center;
+    text-align: center;
+    border-radius: 10px;
+}
+nav ul li{
+    padding: 0 12px;
+}
+.bottom{
+    position:sticky;
+    height: 130px;
+    background: #000;
+    bottom: 0;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    color: #fff;
+    flex-direction: column;
+}
+i{
+    cursor: pointer;
+}
+#myProgressBar{
+    width: 80vw;
+}
+.songItem{
+    height: 50px;
+    display:flex;
+    background-color:inherit;
+    width: 80%;
+    color: #000;
+    background:#fff;
+    justify-content: space-between;
+    align-items: center;
+    margin: 23px auto;
+    border-radius: 15px;
+
+}
+.songItem img{
+    width:45px;
+    margin: 23px 2px;
+    border-radius: 50px;
+}
+.timeStamp{
+    margin: 0 23px;
+}
+@media (max-width:640px){
+    .container{
+        background-image:none;
+    }
+    .songinfo{
+        position: absolute;
+        text-align: center;
+        left: 0;
+        top:25px
+    }
+}
+.songinfo{
+    position:absolute;
+    left:0;
+    top: -1px;
+}
+.songinfo img{
+    width: 40px;
+    opacity: 0;
+}
+#myProgressBar{
+    cursor: pointer;
+}
